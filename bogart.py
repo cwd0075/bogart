@@ -120,8 +120,8 @@ def play():
     current_player = random.randint(1, 2)
     rolls = []
     
-    print('Welcome to Bogart!')                                           ①
-    print()                                                               ②
+    print('Welcome to Bogart!')                                           
+    print()                                                               
  
     while not game_over(player1, player2, rolls):
         print('Pot chips:', pot_chips)
@@ -130,7 +130,7 @@ def play():
         print('Player', current_player, 'turn')
         pot_chips, rolls = take_full_turn(pot_chips)
         if wins_chips(rolls):
-            print('Player', current_player, 'gets', pot_chips, 'chips!')  ③ 
+            print('Player', current_player, 'gets', pot_chips, 'chips!')   
             if current_player == 1:
                 player1 += pot_chips
             else:
@@ -140,7 +140,7 @@ def play():
         
         print()
         print()
-        print('-=' * 20)                                                  ④
+        print('-=' * 20)                                                  
         print()
         
     print('Player', current_player, 'wins!')
