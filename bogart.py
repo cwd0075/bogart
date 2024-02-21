@@ -56,7 +56,8 @@ def take_full_turn(pot_chips):
     '''
     rolls = roll_dice(1)                         
     pot_chips += 1                               
-    while not turn_over(rolls):                  
+    while not turn_over(rolls):
+        print('Pot chips available now:', pot_chips)                  
         keep_going = input('Continue? (y/n) ')   
         if keep_going == 'y':                    
             rolls = roll_dice(len(rolls) + 1)    
